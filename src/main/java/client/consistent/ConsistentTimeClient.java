@@ -87,7 +87,7 @@ public class ConsistentTimeClient {
    */
   public static void main(String[] argv) {
     try {
-      ConsistentTimeClient consistentTimeClient = new ConsistentTimeClient("10.1.146.138:2181", "/failover-server");
+      ConsistentTimeClient consistentTimeClient = new ConsistentTimeClient("127.0.0.1:2181", "/failover-server");
       long ct = consistentTimeClient.getTimestamp();
       System.out.println("Get timestamp " + ct);
       DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss"); 
